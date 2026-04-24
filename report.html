@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SGYXBKFBXJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-SGYXBKFBXJ');
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayWise | Project Report & Diagrams</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="app/images/logo/Favicon.svg" type="image/x-icon">
+
+    <!-- fonts link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <!-- css  -->
+    <link rel="stylesheet" href="app/scss/style.css">
+    <style>
+        .report-section {
+            padding: 100px 5%;
+            background-color: var(--Backgroundcolor);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .report-section h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--primarycolor);
+        }
+
+        .report-section p {
+            margin-bottom: 50px;
+            font-size: 1.2rem;
+            color: var(--darkishwhite);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .gallery-item {
+            background-color: var(--secondarycolor);
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .gallery-item h3 {
+            font-size: 1.2rem;
+            color: var(--primarycolor);
+            margin-bottom: 10px;
+        }
+    </style>
+
+    <!-- icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <div id="preloadder"></div>
+    <header class="header" id="header" style="background-color: var(--Backgroundcolor);">
+        <div class="logo">
+            <a href="index.html">
+                <img src="app/images/logo/logo.svg" alt="PayWise Logo">
+            </a>
+        </div>
+        <div class="menu-hamburger" id="toggle"></div>
+        <nav class="navbar" id="navbar">
+            <ul class="navbar-list" id="primary-navbar" data-visiable="false">
+                <li><a href="index.html#banner" class="navbar-links">Home</a></li>
+                <li><a href="index.html#features" class="navbar-links">Features</a></li>
+                <li><a href="index.html#about" class="navbar-links">About</a></li>
+                <li><a href="index.html#contact" class="navbar-links">Contact</a></li>
+                <li><a href="report.html" class="btn btn-get-courses" style="background: var(--primarycolor); color: var(--Backgroundcolor);"><span>Project Report</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="report-section">
+            <h1>Project Documentation & Screens</h1>
+            <p>A comprehensive visual overview of the E-Payment Comparison Tool (PayWise).</p>
+            
+            <div class="gallery-grid">
+                <!-- Figure 1 -->
+                <div class="gallery-item">
+                    <img src="https://placehold.co/800x500/212730/08d9d5?text=System+Architecture" alt="System Architecture">
+                    <h3>Figure 1: System Architecture of E-Payment Comparison Tool</h3>
+                </div>
+                <!-- Figure 2 -->
+                <div class="gallery-item">
+                    <img src="https://placehold.co/800x500/212730/08d9d5?text=User+Login+Page" alt="User Login Page">
+                    <h3>Figure 2: User Login Page</h3>
+                </div>
+                <!-- Figure 3 -->
+                <div class="gallery-item">
+                    <img src="https://placehold.co/800x500/212730/08d9d5?text=Main+Dashboard" alt="Main Dashboard Interface">
+                    <h3>Figure 3: Main Dashboard Interface</h3>
+                </div>
+                <!-- Figure 4 -->
+                <div class="gallery-item">
+                    <img src="https://placehold.co/800x500/212730/08d9d5?text=Payment+Method+Selection" alt="Payment Method Selection">
+                    <h3>Figure 4: Payment Method Selection Screen</h3>
+                </div>
+                <!-- Figure 5 -->
+                <div class="gallery-item">
+                    <img src="https://placehold.co/800x500/212730/08d9d5?text=Comparison+Result+Table" alt="Comparison Result Table">
+                    <h3>Figure 5: Comparison Result Table (UPI vs Net Banking vs Credit Card)</h3>
+                </div>
+                <!-- Figure 6 -->
+                <div class="gallery-item">
+                    <img src="https://placehold.co/800x500/212730/08d9d5?text=Transaction+Fees+Graph" alt="Transaction Fees Graph">
+                    <h3>Figure 6: Graphical Representation of Transaction Fees</h3>
+                </div>
+                <!-- Figure 7 -->
+                <div class="gallery-item">
+                    <img src="https://placehold.co/800x500/212730/08d9d5?text=Transaction+Speed+Chart" alt="Transaction Speed Chart">
+                    <h3>Figure 7: Transaction Speed Comparison Chart</h3>
+                </div>
+                <!-- Figure 8 -->
+                <div class="gallery-item">
+                    <img src="https://placehold.co/800x500/212730/08d9d5?text=ER+Diagram" alt="ER Diagram">
+                    <h3>Figure 8: Database Structure / ER Diagram</h3>
+                </div>
+                <!-- Figure 9 -->
+                <div class="gallery-item">
+                    <img src="https://placehold.co/800x500/212730/08d9d5?text=DFD+Level+0" alt="Data Flow Diagram (Level 0)">
+                    <h3>Figure 9: Data Flow Diagram (Level 0)</h3>
+                </div>
+                <!-- Figure 10 -->
+                <div class="gallery-item">
+                    <img src="https://placehold.co/800x500/212730/08d9d5?text=DFD+Level+1" alt="Data Flow Diagram (Level 1)">
+                    <h3>Figure 10: Data Flow Diagram (Level 1)</h3>
+                </div>
+                <!-- Figure 11 -->
+                <div class="gallery-item">
+                    <img src="https://placehold.co/800x500/212730/08d9d5?text=System+Flowchart" alt="System Flowchart">
+                    <h3>Figure 11: System Flowchart</h3>
+                </div>
+                <!-- Figure 12 -->
+                <div class="gallery-item">
+                    <img src="https://placehold.co/800x500/212730/08d9d5?text=Final+Output+Screen" alt="Final Output Screen">
+                    <h3>Figure 12: Final Output Screen</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="footer_main">
+            <div class="logo">
+                <img src="app/images/logo/logo.svg" alt="PayWise logo">
+                <p>Get industry accredited certification and advance through our high-quality online courses.</p>
+            </div>
+            <div class="company">
+                <h1>Company</h1>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Sustainablity</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="resources">
+                <h1>Resources</h1>
+                <ul>
+                    <li><a href="#">Payment</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Feedback</a></li>
+                </ul>
+            </div>
+            <div class="quick">
+                <h1>Quick</h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#faq">FAQ</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <h1>2022 <span>©</span> Copyright <span>PayWise</span></h1>
+        </div>
+    </footer>
+    <script src="app/js/script.js" defer></script>
+</body>
+</html>
