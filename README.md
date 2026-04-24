@@ -1,4 +1,4 @@
-# Webhook Online Education Website
+# PayWise Online Education Website
 
 This is a single-page Online Education Website frontend project. It features a modern, responsive design including sections like Navbar, Header, Services/Features, Courses, FAQ, Contact, and Footer.
 
