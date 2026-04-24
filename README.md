@@ -21,8 +21,8 @@ To run this project locally, simply follow these steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yashgadge/Webhook-online-site.git
-   cd Webhook-online-site
+   git clone https://github.com/yashgadge/PayWise-online-site.git
+   cd PayWise-online-site
    ```
 
 2. **Open the project:**
