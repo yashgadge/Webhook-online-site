@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SGYXBKFBXJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-SGYXBKFBXJ');
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayWise | Login</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="app/images/logo/Favicon.svg" type="image/x-icon">
+
+    <!-- fonts link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <!-- css  -->
+    <link rel="stylesheet" href="app/scss/style.css">
+    <style>
+        .login-section {
+            padding: 150px 5% 100px;
+            background-color: var(--Backgroundcolor);
+            min-height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-card {
+            background-color: var(--secondarycolor);
+            padding: 40px;
+            border-radius: 15px;
+            width: 100%;
+            max-width: 450px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            text-align: center;
+        }
+
+        .login-card h2 {
+            font-size: 2.5rem;
+            color: var(--primarycolor);
+            margin-bottom: 30px;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .input-group {
+            text-align: left;
+        }
+
+        .input-group label {
+            display: block;
+            color: var(--darkishwhite);
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background-color: var(--Backgroundcolor);
+            color: var(--white);
+            font-family: 'Outfit', sans-serif;
+            font-size: 1rem;
+        }
+
+        .input-group input:focus {
+            outline: none;
+            border-color: var(--primarycolor);
+        }
+
+        .btn-login {
+            background-color: var(--primarycolor);
+            color: var(--Backgroundcolor);
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+            margin-top: 10px;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .btn-login:hover {
+            opacity: 0.9;
+        }
+
+        .register-link {
+            color: var(--darkishwhite);
+            margin-top: 20px;
+            font-size: 1rem;
+        }
+
+        .register-link a {
+            color: var(--primarycolor);
+            text-decoration: none;
+            font-weight: 600;
+        }
+    </style>
+
+    <!-- icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <div id="preloadder"></div>
+    <header class="header" id="header" style="background-color: var(--Backgroundcolor);">
+        <div class="logo">
+            <a href="index.html">
+                <img src="app/images/logo/logo.svg" alt="PayWise Logo">
+            </a>
+        </div>
+        <div class="menu-hamburger" id="toggle"></div>
+        <nav class="navbar" id="navbar">
+            <ul class="navbar-list" id="primary-navbar" data-visiable="false">
+                <li><a href="index.html#banner" class="navbar-links">Home</a></li>
+                <li><a href="index.html#features" class="navbar-links">Features</a></li>
+                <li><a href="index.html#about" class="navbar-links">About</a></li>
+                <li><a href="login.html" class="navbar-links" style="color: var(--primarycolor);">Login</a></li>
+                <li><a href="report.html" class="btn btn-get-courses" style="background: var(--primarycolor); color: var(--Backgroundcolor);"><span>Project Report</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="login-section">
+            <div class="login-card">
+                <h2>Welcome Back</h2>
+                <form class="login-form" id="loginForm" onsubmit="event.preventDefault(); window.location.href='index.html';">
+                    <div class="input-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="••••••••" required>
+                    </div>
+                    <button type="submit" class="btn-login">Login to PayWise</button>
+                    <p class="register-link">Don't have an account? <a href="#">Register here</a></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="footer_main">
+            <div class="logo">
+                <img src="app/images/logo/logo.svg" alt="PayWise logo">
+                <p>Get industry accredited certification and advance through our high-quality online courses.</p>
+            </div>
+            <div class="company">
+                <h1>Company</h1>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Sustainablity</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="resources">
+                <h1>Resources</h1>
+                <ul>
+                    <li><a href="#">Payment</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Feedback</a></li>
+                </ul>
+            </div>
+            <div class="quick">
+                <h1>Quick</h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#faq">FAQ</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <h1>2022 <span>©</span> Copyright <span>PayWise</span></h1>
+        </div>
+    </footer>
+    <script src="app/js/script.js" defer></script>
+</body>
+</html>
